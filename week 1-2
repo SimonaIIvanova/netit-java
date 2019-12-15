@@ -1,1 +1,37 @@
+class BankManager {
+    public static void main(String[] args){
+        System.out.println("Bank Manager");
+        int numberOfAllCredits = 10;
+        int numberOfDepositsMade = 1000;
+        String[] creditProductCollection = {
+                "Consumer Credit", "Mortgage Credit", "Commodities Credit"
+        };
+        String[] depositProductCollection = {
+                "Child Deposit", "Overnight Deposit", "Structure Deposit", "College Deposit"
+        };
+        int lastIndexCreditProductCollection = creditProductCollection.length - 1;
+        int lastIndexDepositProductCollection = depositProductCollection.length - 1;
+        boolean creditIsGiven = true;
+        boolean depositIsTaken = true;
+        double moneyAvailable = 350000.45;
+        System.out.print("Credits: ");
+        System.out.println(numberOfAllCredits);
+        System.out.print("Deposits: ");
+        System.out.println(numberOfDepositsMade);
+        System.out.print("First credit product: ");
+        System.out.println(creditProductCollection[0]);
+        System.out.print("Last credit product: ");
+        System.out.println(creditProductCollection[lastIndexCreditProductCollection]);
+        System.out.print("First deposit product: ");
+        System.out.println(depositProductCollection[0]);
+        System.out.print("Last deposit product: ");
+        System.out.println(depositProductCollection[lastIndexDepositProductCollection]);
+        System.out.print("Credits are given: ");
+        System.out.println(creditIsGiven);
+        System.out.print("Deposits are taken: ");
+        System.out.println(depositIsTaken);
+        System.out.print("Money available: ");
+        System.out.println(moneyAvailable);
 
+    }
+}
